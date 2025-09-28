@@ -1,0 +1,17 @@
+[2025-09-28T22:26:42.101+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-28T22:26:42.131+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bitcoin_15min.load manual__2025-09-28T22:26:38.801714+00:00 [queued]>
+[2025-09-28T22:26:42.137+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bitcoin_15min.load manual__2025-09-28T22:26:38.801714+00:00 [queued]>
+[2025-09-28T22:26:42.137+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-09-28T22:26:42.148+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load> on 2025-09-28 22:26:38.801714+00:00
+[2025-09-28T22:26:42.152+0000] {standard_task_runner.py:64} INFO - Started process 200 to run task
+[2025-09-28T22:26:42.154+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'bitcoin_15min', 'load', 'manual__2025-09-28T22:26:38.801714+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/bitcoin_etl_dag.py', '--cfg-path', '/tmp/tmpsgugpglr']
+[2025-09-28T22:26:42.156+0000] {standard_task_runner.py:91} INFO - Job 23: Subtask load
+[2025-09-28T22:26:42.200+0000] {task_command.py:426} INFO - Running <TaskInstance: bitcoin_15min.load manual__2025-09-28T22:26:38.801714+00:00 [running]> on host f0b278e89663
+[2025-09-28T22:26:42.389+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='bitcoin_15min' AIRFLOW_CTX_TASK_ID='load' AIRFLOW_CTX_EXECUTION_DATE='2025-09-28T22:26:38.801714+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-28T22:26:38.801714+00:00'
+[2025-09-28T22:26:42.389+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-28T22:26:42.408+0000] {python.py:237} INFO - Done. Returned value was: /opt/***/data/bitcoin/dt=2025-09-28/btc.csv
+[2025-09-28T22:26:42.409+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-28T22:26:42.431+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=bitcoin_15min, task_id=load, run_id=manual__2025-09-28T22:26:38.801714+00:00, execution_date=20250928T222638, start_date=20250928T222642, end_date=20250928T222642
+[2025-09-28T22:26:42.447+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-09-28T22:26:42.462+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-28T22:26:42.464+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
